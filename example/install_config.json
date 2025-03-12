@@ -1,0 +1,112 @@
+{
+    "NAME": "epics",
+    "INSTALL_LOC": "/opt/epics",
+    "BUILD_LOC": "/epics/modules",
+    "CONFIG_MACROS": {
+        "TIRPC": "YES",
+        "STATIC_BUILD": "YES",
+        "BUILD_IOCS": "YES",
+        "WITH_BOOST": "NO",
+        "BOOST_EXTERNAL": "YES",
+        "WITH_PVA": "YES",
+        "WITH_QSRV": "YES",
+        "WITH_BLOSC": "YES",
+        "BLOSC_EXTERNAL": "NO",
+        "WITH_BITSHUFFLE": "YES",
+        "BITSHUFFLE_EXTERNAL": "NO",
+        "WITH_GRAPHICSMAGICK": "YES",
+        "GRAPHICSMAGICK_EXTERNAL": "NO",
+        "GRAPHICSMAGICK_PREFIX_SYMBOLS": "YES",
+        "WITH_HDF5": "YES",
+        "HDF5_EXTERNAL": "NO",
+        "WITH_JSON": "YES",
+        "WITH_JPEG": "YES",
+        "JPEG_EXTERNAL": "NO",
+        "WITH_NETCDF": "YES",
+        "NETCDF_EXTERNAL": "NO",
+        "WITH_NEXUS": "YES",
+        "NEXUS_EXTERNAL": "NO",
+        "WITH_OPENCV": "NO",
+        "OPENCV_EXTERNAL": "YES",
+        "WITH_OPENCV_VIDEO": "YES",
+        "WITH_SZIP": "YES",
+        "SZIP_EXTERNAL": "NO",
+        "WITH_TIFF": "YES",
+        "TIFF_EXTERNAL": "NO",
+        "XML2_EXTERNAL": "NO",
+        "WITH_ZLIB": "YES",
+        "ZLIB_EXTERNAL": "NO",
+        "ARAVIS_LIB": "/opt/aravis/lib64",
+        "ARAVIS_INCLUDE": "/opt/aravis/include/aravis-0.8",
+        "GLIB_INCLUDE": "/usr/include/glib-2.0 /usr/lib64/glib-2.0/include",
+        "glib-2.0_DIR": "/usr/lib64"
+    },
+    "MODULES": {
+        "EPICS_BASE": {
+            "URL": "https://github.com/epics-base/epics-base",
+            "VERSION": "R7.0.5",
+            "RECURSIVE": true
+        },
+        "IPAC": {
+            "URL": "https://github.com/epics-modules/ipac",
+            "VERSION": "2.16"
+        },
+        "ASYN": {
+            "URL": "https://github.com/epics-modules/asyn",
+            "VERSION": "R4-41"
+        },
+        "AUTOSAVE": {
+            "URL": "https://github.com/epics-modules/autosave",
+            "VERSION": "R5-10-2"
+        },
+        "BUSY": {
+            "URL": "https://github.com/epics-modules/busy",
+            "VERSION": "R1-7-3"
+        },
+        "CALC": {
+            "URL": "https://github.com/epics-modules/calc",
+            "VERSION": "R3-7-3"
+        },
+        "DEVIOCSTATS": {
+            "URL": "https://github.com/epics-modules/iocStats",
+            "VERSION": "3.2.0"
+        },
+        "SSCAN": {
+            "URL": "https://github.com/epics-modules/sscan",
+            "VERSION": "R2-11-3"
+        },
+        "MOTOR": {
+            "URL": "https://github.com/epics-modules/motor",
+            "VERSION": "R7-2-2",
+            "RECURSIVE": true
+        },
+        "SNCSEQ": {
+            "URL": "https://github.com/mdavidsaver/sequencer",
+            "VERSION": "2.2.8"
+        },
+        "OPTICS": {
+            "URL": "https://github.com/epics-modules/optics",
+            "VERSION": "R2-13-5"
+        },
+        "STREAM": {
+            "URL": "https://github.com/paulscherrerinstitute/StreamDevice",
+            "VERSION": "2.8.10"
+        },
+        "RECCASTER": {
+            "URL": "https://github.com/ChannelFinder/recsync",
+            "VERSION": "1.6"
+        },
+        "STD": {
+            "URL": "https://github.com/epics-modules/std",
+            "VERSION": "R3-6-2"
+        },
+        "ADSUPPORT": {
+            "URL": "https://github.com/areaDetector/ADSupport",
+            "VERSION": "R1-10"
+        },
+        "ADCORE": {
+            "URL": "https://github.com/areaDetector/ADCore",
+            "VERSION": "R3-12-1"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+class NoActiveEnvironmentError(RuntimeError):
+    pass

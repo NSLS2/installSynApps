@@ -1,0 +1,2 @@
+[console_scripts]
+epicsenv = installSynApps.__main__:main

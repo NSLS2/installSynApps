@@ -1,0 +1,5 @@
+distro
+requests
+
+[test]
+pytest

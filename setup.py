@@ -10,26 +10,25 @@ with open('README.md') as readme:
 
 
 setuptools.setup(
-    name='epics-install',
+    name='epicsenv',
     description='A Python program for building EPICS and synApps',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    version='0.2.7',
+    version='0.3.0',
     author='Jakub Wlodek',
     author_email='jwlodek@bnl.gov',
     license='BSD (3-clause)',
-    url='https://github.com/epicsNSLS2-deploy/installSynApps',
+    url='https://github.com/NSLS2/installSynApps',
     packages=setuptools.find_packages(exclude=['tests', 'docs', '__pycache__']),
     py_modules=['installCLI', 'installGUI'],
     #package_data={'configure': ['*'], 'resources': ['*']},
     include_package_data=True,
-    python_requires='>=3.4',
+    python_requires='>=3.6',
     install_requires=requirements,
     keywords='epics install build deploy scripting automation',
     entry_points={
         'console_scripts': [
-            'epics-install = installCLI:main',
-            'epics-install-gui = installGUI:main',
+            'epicsenv = installSynApps.__main__:main',
         ],
     },
     extras_require={
@@ -38,12 +37,11 @@ setuptools.setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
     ],
 )
